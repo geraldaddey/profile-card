@@ -2,11 +2,14 @@
   --dark-cyan: hsl(185, 75%, 39%);
   --dark-saturated-blue: hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --dark-gray: hsl(0, 0%, 59%);
 }
 
 body {
   background-image: url(images/bg-pattern-top.svg);
   background-position: right;
+  background-size: cover;
   background-color: var(--dark-cyan);
   font-family: "Kumbh Sans", sans-serif;
   font-size: 18px;
@@ -40,12 +43,12 @@ body {
 }
 
 .profile {
-  border-bottom: 1px solid rgb(212, 209, 209);
+  border-bottom: 1px solid var(--dark-gray);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
   position: relative;
   top: -45px;
 }
@@ -57,7 +60,8 @@ body {
 }
 
 .profile p {
-  margin: 0;
+  margin: 5px 0 0 0;
+  color: var(--dark-gray);
 }
 
 .self {
@@ -68,12 +72,21 @@ body {
   justify-content: center;
 }
 
+.self span {
+  color: var(--dark-gray);
+}
+
+.self span:first-child {
+  font-weight: bold;
+  color: black;
+}
+
 .stats {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
-  padding: 0 0 0 0;
+  padding: 0 10 10px 10px;
   position: relative;
   bottom: 20px;
 }
@@ -88,7 +101,8 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-  visibility: hidden;
+  position: relative;
+  top: 650px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
