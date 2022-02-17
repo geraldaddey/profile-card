@@ -9,7 +9,6 @@
 body {
   background-image: url(images/bg-pattern-top.svg);
   background-position: right;
-  background-size: cover;
   background-color: var(--dark-cyan);
   font-family: "Kumbh Sans", sans-serif;
   font-size: 18px;
