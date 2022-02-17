@@ -40,14 +40,14 @@ body {
 }
 
 .profile {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(212, 209, 209);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 0 10px 0;
-  /* position: relative;
-    top: -45px; */
+  position: relative;
+  top: -45px;
 }
 
 .profile img {
@@ -73,11 +73,16 @@ body {
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
-  padding: 10px 0 10px 0;
+  padding: 0 0 0 0;
+  position: relative;
+  bottom: 20px;
 }
 
 .stats span {
-  width: 50px;
+  width: 80px;
+  color: rgb(27, 27, 27);
+
+  font-weight: lighter;
 }
 
 .attribution {
